@@ -16,7 +16,7 @@ library(readxl)
 ## Load & join data sets
 
 ```{r load-data, message = FALSE}
-# Member 1 write code to load file 2 data here:
+# Member 1 write code to load file 2 data here_:
 View(mismanaged-plastic-waste-per-capita)
 data1 <- read_csv("data/mismanaged-plastic-waste-per-capita.csv")
 
