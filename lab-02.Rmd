@@ -28,6 +28,8 @@ data2 <- read_csv2("data/per-capita-ocean-plastic-waste.txt")
 # Member 3 write code to load File 3 data here:
 data3 <- read_tsv("data/UN_country_population.tsv")
 
+data3
+
 
 # Member 4 write code to load File 4 data here:
 
@@ -43,6 +45,8 @@ plastic_data_all <- data1
 
 
 # Member 2 write code to join your data to 'plastic_data_all':
+plastic_data_all
+
 plastic_data_all <- data2 %>%
   select(-name) %>%
   left_join(plastic_data_all, by = "code")
@@ -53,6 +57,8 @@ plastic_data_all <- data2 %>%
 plastic_data_all <- data3 %>%
   select(-name) %>%
   right_join(plastic_data_all, by = "code")
+
+plastic_data_all
 
 # Member 4 write code to join your data to 'plastic_data_all':
 
